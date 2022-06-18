@@ -1,17 +1,18 @@
 <script>
-import Menu from "../icons/Menu.svelte";
-
+    import Menu from "../icons/Menu.svelte";
 </script>
 <nav>
     <div id="root">
         <div id="content">
-            <a href="/" id="title" class="px-gradient">Peroxaan Studios</a>
-            <div id="menu">
-                <Menu size={24}/>
+            <div id="nv">
+                <a href="/" id="title" class="px-gradient">Peroxaan Studios</a>
+                <div id="menu">
+                    <Menu size={24}/>
+                </div>
             </div>
             <div id="links">
-                <a class="muted-text" href="#apps">Apps</a>
-                <a class="muted-text" href="#team">Team</a>
+                <a class="muted-text" href="/#apps" tinro-ignore>Apps</a>
+                <a class="muted-text" href="/#team" tinro-ignore>Team</a>
                 <a class="muted-text" href="/downloads">Downloads</a>
                 <a class="muted-text" href="https://newsroom.peroxaan.com">Newsroom</a>
             </div>
@@ -44,10 +45,17 @@ import Menu from "../icons/Menu.svelte";
     #content {
         flex-grow: 1;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         max-width: 720px;
+    }
+
+    #nv {
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+        flex-grow: 1;
     }
 
     #links a {
@@ -55,13 +63,18 @@ import Menu from "../icons/Menu.svelte";
     }
 
     #links {
-        display: none;
+        display: inherit;
         margin-right: 0.5rem;
     }
 
+    .hidden {
+        display: none;
+    }
+
     #menu {
-        margin: -1rem;
+        margin: -0.5rem;
         display: flex;
+        cursor: pointer;
         margin-right: 0.5rem;
     }
 
@@ -72,7 +85,9 @@ import Menu from "../icons/Menu.svelte";
     }
     @media (min-width:768px) {
         #content {
-            max-width: 720px
+            max-width: 720px;
+            flex-direction: row;
+            align-items: center;
         }
 
         #links {
