@@ -4,7 +4,7 @@
     </div>
 </div>
 
-<style>
+<style>    
     #root {
         display: flex;
         margin: 0px 32px;

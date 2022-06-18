@@ -10,8 +10,8 @@ import Menu from "../icons/Menu.svelte";
                 <Menu size={24}/>
             </div>
             <div id="links">
-                <a class="muted-text" href="/#apps">Apps</a>
-                <a class="muted-text" href="/#team">Team</a>
+                <a class="muted-text" href="#apps">Apps</a>
+                <a class="muted-text" href="#team">Team</a>
                 <a class="muted-text" href="/downloads">Downloads</a>
                 <a class="muted-text" href="https://newsroom.peroxaan.com">Newsroom</a>
             </div>
