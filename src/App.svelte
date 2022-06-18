@@ -1,5 +1,8 @@
 <script>
     import { Route } from 'tinro';
+    import Aerosketch from './lib/routes/apps/Aerosketch.svelte';
+    import Talon from './lib/routes/apps/Talon.svelte';
+    import Ruby from './lib/routes/apps/Ruby.svelte';
     import Downloads from './lib/routes/downloads/Downloads.svelte';
     import Home from './lib/routes/home/Home.svelte';
 </script>
@@ -9,15 +12,15 @@
 </Route>
 
 <Route path="/Aerosketch">
-
+    <Aerosketch />
 </Route>
 
 <Route path="/Talon">
-
+    <Talon />
 </Route>
 
 <Route path="/Ruby">
-
+    <Ruby />
 </Route>
 
 <Route path="/downloads">
@@ -63,6 +66,18 @@
         color: #6c757d !important;
         text-decoration: none !important;
         -webkit-text-decoration-skip: objects;
+    }
+
+    :global(.shadow) {
+        filter: drop-shadow(0 0 0.5rem rgba(0,0,0,0.25));
+    }
+
+    :global(.shadow-strong) {
+        filter: drop-shadow(0 0 0.5rem rgba(0,0,0,0.5));
+    }
+
+    :global(.shadow-light) {
+        filter: drop-shadow(0 0 0.5rem rgba(0,0,0,0.1));
     }
 
     @media (prefers-color-scheme: dark) {

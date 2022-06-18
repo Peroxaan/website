@@ -7,7 +7,7 @@
     export let downloadUrl;
 </script>
 
-<div id="root">
+<div id="root" class="shadow-light">
     <div id="content">
         <img id="icon" src={iconUrl} alt={title} />
         <div id="body">

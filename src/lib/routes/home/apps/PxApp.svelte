@@ -8,7 +8,7 @@
     export let href;
 </script>
 
-<div id="root">
+<div id="root" class="shadow">
     <div id="content">
         <div id="icon">
             <svg id="icon-bg"

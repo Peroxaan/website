@@ -3,7 +3,7 @@
 </script>
 
 <h1>The Team</h1>
-<div class="apps">
+<div id="apps" class="shadow">
     <TeamMember 
         iconBg={"#ffcc80"}
         iconUrl={"./resources/images/people/Michael.png"}
@@ -32,7 +32,7 @@
         text-align: center;
     }
     
-    .apps {
+    #apps {
         display: flex;
         width: 100%;
         flex-wrap: wrap;

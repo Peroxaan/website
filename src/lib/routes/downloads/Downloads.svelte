@@ -6,6 +6,10 @@
 import DownloadItem from "./DownloadItem.svelte";
 </script>
 
+<svelte:head>
+    <title>Downloads</title>
+</svelte:head>
+
 <NavBar/>
 <Base>
     <Header>
@@ -35,15 +39,15 @@ import DownloadItem from "./DownloadItem.svelte";
 </Base>
 
 <style>
-    h2 {
-        font-weight: normal;
-    }
-
     #content {
         display: flex;
         flex-direction: column;
         text-align: center;
         margin-bottom: 3rem !important;
         max-width: 720px;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
     }
 </style>
