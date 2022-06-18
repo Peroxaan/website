@@ -1,8 +1,8 @@
 <script>
-import Button from "../../../components/Button.svelte";
+    import Button from "../../../components/Button.svelte";
 
-    export let icon_bg;
-    export let icon_url;
+    export let iconBg;
+    export let iconUrl;
     export let title;
     export let text;
     export let href;
@@ -16,9 +16,9 @@ import Button from "../../../components/Button.svelte";
                 preserveAspectRatio="xMidYMid slice" 
                 focusable="false" 
                 role="img">
-                <rect fill="{icon_bg}" width="100%" height="100%"></rect>
+                <rect fill="{iconBg}" width="100%" height="100%"></rect>
             </svg>
-            <img id="icon-img" src="{icon_url}" alt="{title} icon" />
+            <img id="icon-img" src="{iconUrl}" alt="{title} icon" />
         </div>
         <div id="content-body">
             <h2>{title}</h2>
@@ -100,4 +100,4 @@ import Button from "../../../components/Button.svelte";
             background-color: #181818;
         }
     }
-    </style>
+</style>

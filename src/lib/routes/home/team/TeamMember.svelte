@@ -1,7 +1,7 @@
 <script>
     import Button from "../../../components/Button.svelte";
-    export let icon_bg;
-    export let icon_url;
+    export let iconBg;
+    export let iconUrl;
     export let name;
     export let description;
     export let twitterUsername;
@@ -16,9 +16,9 @@
                 preserveAspectRatio="xMidYMid slice" 
                 focusable="false" 
                 role="img">
-                <rect fill="{icon_bg}" width="100%" height="100%"></rect>
+                <rect fill="{iconBg}" width="100%" height="100%"></rect>
             </svg>
-            <img id="icon-img" src="{icon_url}" alt="{name}'s picture" />
+            <img id="icon-img" src="{iconUrl}" alt="{name}'s picture" />
         </div>
         <div id="content-body">
             <h2>{name}</h2>
@@ -113,4 +113,4 @@
             background-color: #181818;
         }
     }
-    </style>
+</style>

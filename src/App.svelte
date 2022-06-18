@@ -1,11 +1,11 @@
 <script>
-  import { Route } from 'tinro';
-import Downloads from './lib/routes/Downloads.svelte';
-  import Home from './lib/routes/home/Home.svelte';
+    import { Route } from 'tinro';
+    import Downloads from './lib/routes/downloads/Downloads.svelte';
+    import Home from './lib/routes/home/Home.svelte';
 </script>
 
 <Route path="/">
-  <Home/>
+    <Home/>
 </Route>
 
 <Route path="/Aerosketch">
@@ -21,7 +21,7 @@ import Downloads from './lib/routes/Downloads.svelte';
 </Route>
 
 <Route path="/downloads">
-  <Downloads/>
+    <Downloads/>
 </Route>
 
 <style>
