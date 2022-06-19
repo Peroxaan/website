@@ -45,6 +45,8 @@
 <style>
     #root {
         width: 100%;
+        display: grid;
+        align-content: stretch;
     }
 
     #content {
@@ -94,6 +96,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex: 1;
         margin: 1.25rem;
     }
     

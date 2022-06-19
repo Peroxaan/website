@@ -39,7 +39,7 @@
 <style>
     #root {
         width: 100%;
-        display: flex;
+        display: grid;
         align-content: stretch;
     }
 
