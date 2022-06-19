@@ -22,7 +22,7 @@
         </a>
     {/if}
     {#if windows != undefined}
-        <a target="_blank" href={windows}>
+        <a target="_blank" href={windows} id="windows">
             <img src='./resources/images/buttons/windows.svg' alt='Download for Windows' />
         </a>
     {/if}
@@ -45,5 +45,9 @@
 
     a {
         margin: 4px;
+    }
+
+    #windows {
+        color-scheme: only light;
     }
 </style>
