@@ -22,8 +22,8 @@ import GetAppButtons from "../../components/GetAppButtons.svelte";
                 </div>
             </div>
             <GetAppButtons
-                    appStore={'2'}
-                    googlePlay={'3'} />
+                    appStore={'https://apps.apple.com/us/app/id1522815729'}
+                    googlePlay={'https://play.google.com/store/apps/details?id=com.peroxaan.ruby'} />
         </div>
         <img class="shadow-strong" id="app_image" src="./resources/images/screenshots/Ruby.png" alt='Ruby screenshot' />
     </Header>

@@ -22,7 +22,7 @@ import GetAppButtons from "../../components/GetAppButtons.svelte";
                 </div>
             </div>
             <GetAppButtons
-                    testflight={'https://peroxaan.com'} />
+                    testflight={'https://testflight.apple.com/join/nhxwHeEL'} />
         </div>
         <img class="shadow-strong" id="app_image" src="./resources/images/screenshots/Aerosketch.png" alt='Aerosketch screenshot' />
     </Header>

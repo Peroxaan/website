@@ -23,7 +23,7 @@
     {/if}
     {#if windows != undefined}
         <a target="_blank" href={windows}>
-            <p>Windows TODO</p>
+            <img src='./resources/images/buttons/windows.svg' alt='Download for Windows' />
         </a>
     {/if}
 </div>

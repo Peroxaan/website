@@ -8,6 +8,10 @@
     import NavBar from "../../components/NavBar.svelte";
 </script>
 
+<svelte:head>
+    <title>Peroxaan Studios</title>
+</svelte:head>
+
 <NavBar />
 <Base>
     <Header>    
