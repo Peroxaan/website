@@ -21,8 +21,10 @@
             <img id="icon-img" src="{iconUrl}" alt="{name}'s picture" />
         </div>
         <div id="content-body">
-            <h2>{name}</h2>
-            <p>{description}</p>
+            <div>
+                <h2>{name}</h2>
+                <p>{description}</p>
+            </div>
             <div id="buttons">
                 <Button 
                     borderRadius={'8px 0px 0px 8px'}
@@ -89,6 +91,9 @@
     }
     
     #content-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin: 1.25rem;
     }
     

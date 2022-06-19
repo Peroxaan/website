@@ -21,13 +21,17 @@
             <img id="icon-img" src="{iconUrl}" alt="{title} icon" />
         </div>
         <div id="content-body">
-            <h2>{title}</h2>
-            <p>{text}</p>
-            <Button 
-                borderRadius={'8px'}
-                small={true}
-                text={'Visit'}
-                href={href}/>
+            <div>
+                <h2>{title}</h2>
+                <p>{text}</p>
+            </div>
+            <div>
+                <Button 
+                    borderRadius={'8px'}
+                    small={true}
+                    text={'Visit'}
+                    href={href}/>
+            </div>
         </div>
     </div>
 </div>
@@ -35,6 +39,8 @@
 <style>
     #root {
         width: 100%;
+        display: flex;
+        align-content: stretch;
     }
 
     #content {
@@ -81,7 +87,11 @@
     }
     
     #content-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin: 1.25rem;
+        flex: 1;
     }
 
     h2 {

@@ -3,7 +3,7 @@
     import Header from "../../components/Header.svelte";
     import Footer from "../../components/Footer.svelte";
     import NavBar from "../../components/NavBar.svelte";
-import DownloadItem from "./DownloadItem.svelte";
+    import DownloadItem from "./DownloadItem.svelte";
 </script>
 
 <svelte:head>
