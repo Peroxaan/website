@@ -1,16 +1,22 @@
 <script>
     import Menu from "../icons/Menu.svelte";
+
+    let isCollapsed = true;
+    
+    function toggleDropdown() {
+        isCollapsed = !isCollapsed
+    }
 </script>
 <nav>
     <div id="root">
         <div id="content">
             <div id="nv">
                 <a href="/" id="title" class="px-gradient">Peroxaan Studios</a>
-                <div id="menu">
+                <div id="menu" on:click={toggleDropdown}>
                     <Menu size={24}/>
                 </div>
             </div>
-            <div id="links">
+            <div id="links" class="{isCollapsed ? 'collapsed' : 'expanded'}" on:click={toggleDropdown}>
                 <a class="muted-text" href="/#apps" tinro-ignore>Apps</a>
                 <a class="muted-text" href="/#team" tinro-ignore>Team</a>
                 <a class="muted-text" href="/downloads">Downloads</a>
@@ -59,16 +65,32 @@
     }
 
     #links a {
-        margin: 0px 6px;
+        margin: 0.5rem 0.25rem;
+        display: block;
     }
 
     #links {
         display: inherit;
+        transition: height .35s ease;
+        flex-direction: column;
         margin-right: 0.5rem;
+        margin-left: 0.5rem;
+	    background-clip: padding-box;
+        overflow: hidden;
     }
 
-    .hidden {
-        display: none;
+    @media screen and (prefers-reduced-motion:reduce) {
+        #links {
+            transition: none
+        }
+    }
+
+    .expanded {
+        height: 10rem;
+    }
+
+    .collapsed {
+        height: 0rem;
     }
 
     #menu {
@@ -92,6 +114,12 @@
 
         #links {
             display: flex;
+            flex-direction: row;
+            height: inherit;
+        }
+
+        #links a {
+            margin: 0rem 6px;
         }
 
         #menu {
