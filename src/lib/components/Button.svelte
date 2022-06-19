@@ -8,7 +8,7 @@
     let padding = small ? '5px 8px' : '10px 16px';
 </script>
 
-<div>
+<div class="{!small ? 'shadow' : ''}">
     <a target={hrefNewTab ? "_blank" : ""} href={href} style="border-radius: {borderRadius}; padding: {padding};">
         {text}
     </a>
@@ -32,5 +32,12 @@
 
     a:hover {
         border-color: #fd8395;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        a {
+            background-color: #43272b;
+            color: #ffe7f1;
+        }
     }
 </style>
