@@ -3,7 +3,7 @@
     import Base from "../../components/Base.svelte";
     import NavBar from "../../components/NavBar.svelte";
     import Header from "../../components/Header.svelte";
-import GetAppButtons from "../../components/GetAppButtons.svelte";
+    import GetAppButtons from "../../components/GetAppButtons.svelte";
 </script>
 
 <svelte:head>

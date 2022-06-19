@@ -1,10 +1,10 @@
 <script>
-import Base from "../components/Base.svelte";
-import Footer from "../components/Footer.svelte";
-import Header from "../components/Header.svelte";
-import NavBar from "../components/NavBar.svelte";
-
+    import Base from "../components/Base.svelte";
+    import Footer from "../components/Footer.svelte";
+    import Header from "../components/Header.svelte";
+    import NavBar from "../components/NavBar.svelte";
 </script>
+
 <NavBar />
 <Base>
     <Header>
