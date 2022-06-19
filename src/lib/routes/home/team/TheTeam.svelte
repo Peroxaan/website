@@ -5,7 +5,7 @@
 <h1>The Team</h1>
 <div id="apps" class="shadow">
     <TeamMember 
-        iconBg={"#ffcc80"}
+        iconBg={"#d79cf7"}
         iconUrl={"./resources/images/people/Michael.png"}
         name={"Michael"}
         description={"CEO. Head of iOS Development."}
