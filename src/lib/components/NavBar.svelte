@@ -13,7 +13,7 @@
             <div id="nv">
                 <a href="/" id="title" class="px-gradient">Peroxaan Studios</a>
                 <div id="menu" on:click={toggleDropdown}>
-                    <Menu size={24}/>
+                    <Menu/>
                 </div>
             </div>
             <div id="links" class="{isCollapsed ? 'collapsed' : 'expanded'}" on:click={toggleDropdown}>
@@ -39,6 +39,7 @@
         font-size: 1.25rem;
         margin-right: 1rem;
         margin-left: 1rem;
+        flex-grow: 1;
     }
 
     #root {
@@ -60,7 +61,7 @@
     #nv {
         display: inherit;
         justify-content: inherit;
-        align-items: inherit;
+        align-items: center;
         flex-grow: 1;
     }
 
@@ -95,9 +96,11 @@
 
     #menu {
         margin: -0.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 0.5rem;
         display: flex;
         cursor: pointer;
-        margin-right: 0.5rem;
     }
 
     @media (min-width:576px) {
