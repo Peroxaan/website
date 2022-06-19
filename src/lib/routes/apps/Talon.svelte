@@ -24,7 +24,7 @@
             <GetAppButtons
                     appStore={'https://apps.apple.com/us/app/id1492913323'}
                     googlePlay={'https://play.google.com/store/apps/details?id=com.peroxaan.talon'}
-                    windows={'https://downloads.peroxaan.com/TalonWin/TalonSetup.exe'} />
+                    windows={'https://dl.peroxaan.com/TalonSetup.exe'} />
         </div>
         <img class="shadow-strong" id="app_image" src="./resources/images/screenshots/Talon.png" alt='Talon screenshot' />
     </Header>
