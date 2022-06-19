@@ -6,6 +6,7 @@
     import Downloads from './lib/routes/downloads/Downloads.svelte';
     import Home from './lib/routes/home/Home.svelte';
     import Privacy from './lib/routes/Privacy.svelte';
+    import Stickers from './lib/routes/apps/Stickers.svelte';
 </script>
 
 <Route path="/">
@@ -24,6 +25,10 @@
     <Ruby />
 </Route>
 
+<Route path="/Stickers">
+    <Stickers />
+</Route>
+
 <Route path="/downloads">
     <Downloads/>
 </Route>
@@ -31,6 +36,14 @@
 <Route path="/privacy">
     <Privacy />
 </Route>
+
+<!-- Redirects -->
+<Route path="/aerosketch" redirect="/Aerosketch" />
+<Route path="/talon" redirect="/Talon" />
+<Route path="/ruby" redirect="/Ruby" />
+<Route path="/stickers" redirect="/Stickers" />
+<Route path="/Downloads" redirect="/downloads" />
+<Route path="/Privacy" redirect="/privacy"/>
 
 <style>
     :global(*) {
