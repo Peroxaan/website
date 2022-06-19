@@ -5,6 +5,7 @@
     import Ruby from './lib/routes/apps/Ruby.svelte';
     import Downloads from './lib/routes/downloads/Downloads.svelte';
     import Home from './lib/routes/home/Home.svelte';
+    import Privacy from './lib/routes/Privacy.svelte';
 </script>
 
 <Route path="/">
@@ -25,6 +26,10 @@
 
 <Route path="/downloads">
     <Downloads/>
+</Route>
+
+<Route path="/privacy">
+    <Privacy />
 </Route>
 
 <style>
