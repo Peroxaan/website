@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peroxaan Studios</title>
-    <link rel="icon" type="image/png" href="./resources/images/logo.png">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Peroxaan Studios</title>
+		<link rel="icon" type="image/png" href="./resources/images/logo.png">
 		<link rel="apple-touch-icon" href="./resources/images/logo.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Peroxaan Studios' website!">
@@ -14,14 +14,9 @@
 		<meta name="twitter:site" content="@Peroxaan" />
 		<meta name="twitter:title" content="Peroxaan Studios' Website" />
 		<meta name="twitter:description" content="Check out Peroxaan Studios!" />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+		%sveltekit.head%
+	</head>
+	<body>
+		<div>%sveltekit.body%</div>
+	</body>
 </html>

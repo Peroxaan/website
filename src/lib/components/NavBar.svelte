@@ -17,8 +17,8 @@
                 </div>
             </div>
             <div id="links" class="{isCollapsed ? 'collapsed' : 'expanded'}" on:click={toggleDropdown}>
-                <a class="muted-text" href="/#apps" tinro-ignore>Apps</a>
-                <a class="muted-text" href="/#team" tinro-ignore>Team</a>
+                <a class="muted-text" href="/#apps">Apps</a>
+                <a class="muted-text" href="/#team">Team</a>
                 <a class="muted-text" href="/downloads">Downloads</a>
                 <a class="muted-text" href="https://newsroom.peroxaan.com">Newsroom</a>
             </div>

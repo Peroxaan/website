@@ -1,14 +1,14 @@
 <script>
-    import Button from "../../../components/Button.svelte";
+    import Button from "../../components/Button.svelte";
+
     export let iconBg;
     export let iconUrl;
-    export let name;
-    export let description;
-    export let twitterUsername;
-    export let email;
+    export let title;
+    export let text;
+    export let href;
 </script>
 
-<div id="root">
+<div id="root" class="shadow">
     <div id="content">
         <div id="icon">
             <svg id="icon-bg"
@@ -18,25 +18,19 @@
                 role="img">
                 <rect fill="{iconBg}" width="100%" height="100%"></rect>
             </svg>
-            <img id="icon-img" src="{iconUrl}" alt="{name}'s picture" />
+            <img id="icon-img" src="{iconUrl}" alt="{title} icon" />
         </div>
         <div id="content-body">
             <div>
-                <h2>{name}</h2>
-                <p>{description}</p>
+                <h2>{title}</h2>
+                <p>{text}</p>
             </div>
-            <div id="buttons">
+            <div>
                 <Button 
-                    borderRadius={'8px 0px 0px 8px'}
+                    borderRadius={'8px'}
                     small={true}
-                    text={'Twitter'}
-                    hrefNewTab={true}
-                    href="https://twitter.com/{twitterUsername}"/>
-                <Button 
-                    borderRadius={'0px 8px 8px 0px'}
-                    small={true}
-                    text={'Email'}
-                    href="mailto:{email}"/>
+                    text={'Visit'}
+                    href={href}/>
             </div>
         </div>
     </div>
@@ -45,6 +39,8 @@
 <style>
     #root {
         width: 100%;
+        display: flex;
+        align-content: stretch;
     }
 
     #content {
@@ -87,7 +83,7 @@
         margin-top: auto;
         margin-bottom: auto;
         margin-left:auto;
-        border-radius: 100px;
+        border-radius: 25px;
     }
     
     #content-body {
@@ -95,11 +91,7 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 1.25rem;
-    }
-    
-    #buttons {
-        display: flex;
-        flex-direction: row;
+        flex: 1;
     }
 
     h2 {

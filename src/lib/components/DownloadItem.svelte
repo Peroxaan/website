@@ -1,5 +1,5 @@
 <script>
-    import DownloadIcon from "../../icons/DownloadIcon.svelte";
+    import DownloadIcon from "../icons/DownloadIcon.svelte";
 
     export let iconUrl;
     export let title;
