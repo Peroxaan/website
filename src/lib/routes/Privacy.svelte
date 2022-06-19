@@ -9,39 +9,34 @@
 <Base>
     <Header>
         <h1 class="px-gradient">Privacy Policy</h1>
-        <p class="lead">Last Updated: September 4th, 2020</p>
+        <p class="lead">Last Updated: June 19th, 2022</p>
     </Header>
     <div class="lead">
-        <p>Here at Peroxaan Studios, we believe in protecting our users privacy. 
-            Therefore, all of our products are designed to collect little to no data about you,
-            and anything that is collected is purely data that the user consents to provide. 
-            When we’re collecting data, you will know. We don’t collect anything without letting
-            our users know.</p>
-        <p>In Talon for iOS/macOS/Android, as of version 1.2 - nothing is being collected by Peroxaan.
-            All data you input in the App is handled within the App, and we do not have access to any
-            of that data. If you choose to save links inside of the app, that data is stored on 
-            device. If you're on an iPhone, iPad, or Mac, that data will additionally be stored on 
-            iCloud for easy syncing across your devices. All data you send with Talon is sent directly
-            to those parties and we do not save any of that.</p>
-        <p>In Aerosketch for iOS, as of beta 16 - nothing is being collected from the users by 
-            Peroxaan. However, since we support Game Center for Leaderboards and Achievements,
-            some data will be collected by Apple to support that. However, there is no 
-            information that we hold. That is subject to change in the future. </p>
-        <p>In Electrocam for iOS, as of beta 4 - nothing is being collected from the users by Peroxaan,
-            and nothing is being collected by any third parties. This may change in the future.</p>
-        <p>In Clicker for iOS, as of beta 6 - nothing is being collected from the users by 
-            Peroxaan. However, since we support Game Center for Leaderboards and Achievements,
-            some data will be collected by Apple to support that. However, there is no
-            information that we hold. That is subject to change in the future.</p>
-        <p>In Ruby for iOS, as of version 1.0 - user preferences and saved data are being stored
-            on device and in iCloud. Peroxaan does not have access to this data.</p>
-        <p>In Peroxaan Stickers for iOS, as of version 2.1 - nothing is being collected from the
-            users by Peroxaan, and this will not be changing.</p>
-        <p>For all of our apps, there are links to external websites - such as Twitter. We have
-            no control over what data they may collect. For that information, please read their 
-            respective privacy policies.</p>
-        <p>Also, for all apps - we have access to your Crash Reports and Feedback, if you choose
-            to submit it. Your name and email may be shared if you submit a crash or send feedback.</p>
+        <p>At Peroxaan Studios, we believe in user privacy, and we like to keep you in the loop about 
+            how your data may be collected and or utilized in our apps. </p>
+        <p>First and foremost, majority of data is actually collected by third parties, and Peroxaan 
+            doesn’t have access to most of it. Whether this be your Webhook data sent over Discord in Talon, 
+            or the bookmark data stored in iCloud for Ruby on iOS, this is data handled by third parties, 
+            and you should reference their respective privacy policies for more information on that.</p>
+        <p>There is a very limited amount of data we actually collect, which is mostly analytical data. 
+            We use TelemetryDeck in the latest version of Talon for iOS, and this will roll out to more apps over time. 
+            All of the analytical data collected is private and anonymous, and it mostly includes things like device 
+            type, OS version, app version, and what features of the app you use. </p>
+        <p>In Talon, we’ve built a new in house Link Shortener, talon.link - which essentially only stores the data
+            related to that link shortening request - such as the time it was made, the link being shortened - 
+            and the short code that was generated. Talon for iOS also stores data on iCloud which is handled 
+            by Apple. Talon has integrations with a large range of platforms, including Discord, Slack, 
+            IFTTT, and all of that data is stored by those respective platforms, not us. </p>
+        <p>In Ruby, there is no data collected by Peroxaan as of now, however - Ruby uses the Microsoft News API, 
+            and data may be collected by Microsoft when sending requests to their API. In addition to that, 
+            user data such as Bookmarks and other user preferences may be stored in iCloud and on device. 
+            This data is not accessible by Peroxaan.</p>
+        <p>As for unreleased projects, details on their data collection will not be mentioned here as it is rapidly 
+            evolving and subject to change, however - crash data and user feedback may be collected by Apple and Google 
+            if you’re participating in any testing programs.</p>
+        <p>In addition, our apps may link to external sites, such as Twitter - and your data may be collected by 
+        those third parties. In an app like Ruby, where the content is primarily provided by third parties, since 
+        they’re news articles - it is imperative that you know that data may be collected by those websites.</p>
     </div>
     <Footer />
 </Base>
