@@ -13,7 +13,7 @@ import DownloadItem from "./DownloadItem.svelte";
 <NavBar/>
 <Base>
     <Header>
-        <h1>Downloads</h1>
+        <h1 class="px-gradient">Downloads</h1>
         <p class="lead">Here you can find downloads for press kits!</p>
     </Header>
 
