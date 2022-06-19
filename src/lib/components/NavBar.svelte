@@ -38,7 +38,6 @@
     #title {
         font-size: 1.25rem;
         margin-right: 1rem;
-        margin-left: 1rem;
         flex-grow: 1;
     }
 
@@ -46,7 +45,7 @@
         display: flex;
         background-color: white;
         justify-content: center;
-        padding: 0.75rem;
+        padding: 0.75rem 2rem;
     }
 
     #content {
@@ -66,7 +65,7 @@
     }
 
     #links a {
-        margin: 0.5rem 0.25rem;
+        margin: 0.5rem 0rem;
         display: block;
     }
 
@@ -74,8 +73,6 @@
         display: inherit;
         transition: height .35s ease;
         flex-direction: column;
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
 	    background-clip: padding-box;
         overflow: hidden;
     }
@@ -95,10 +92,8 @@
     }
 
     #menu {
-        margin: -0.5rem;
         height: 1.5rem;
         width: 1.5rem;
-        margin-right: 0.5rem;
         display: flex;
         cursor: pointer;
     }

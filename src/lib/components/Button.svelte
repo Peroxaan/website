@@ -5,7 +5,7 @@
     export let borderRadius = '25px';
     export let small = false;
 
-    let padding = small ? '4px 8px 5px 8px' : '8px 16px 10px 16px';
+    let padding = small ? '5px 8px' : '10px 16px';
 </script>
 
 <div>

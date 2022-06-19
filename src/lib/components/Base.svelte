@@ -7,7 +7,7 @@
 <style>    
     #root {
         display: flex;
-        margin: 0px 32px;
+        margin: 0px 2rem;
         justify-content: center;
     }
 
