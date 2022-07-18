@@ -4,9 +4,9 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"package": "vite package",
+		"package": "svelte-kit package",
 		"preview": "vite preview",
-		"prepare": "vite sync",
+		"prepare": "svelte-kit sync",
 		"lint": "prettier --check --plugin-search-dir=. .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
