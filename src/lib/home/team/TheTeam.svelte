@@ -19,12 +19,12 @@
         twitterUsername={"TheLBall"}
         email={"thelball@peroxaan.com"} />
     <TeamMember 
-        iconBg={"#df797c"}
-        iconUrl={"./resources/images/people/idkwuu.png"}
-        name={"idkwuu"}
+        iconBg={"#FF9AF5"}
+        iconUrl={"./resources/images/people/kitwnd.png"}
+        name={"kitwnd"}
         description={"Head of Android Development."}
-        twitterUsername={"idkwuu"}
-        email={"idkwuu@peroxaan.com"} />
+        twitterUsername={"kitwnd"}
+        email={"kitwnd@peroxaan.com"} />
 </div>
 
 <style>
