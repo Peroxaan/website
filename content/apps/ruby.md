@@ -3,6 +3,7 @@ name: Ruby
 description: Beautifully designed news app with powerful features.
 color: red
 appStore: "1522815729"
+priority: 1
 ---
 
 Ruby is a beautifully designed news app for iPhone, iPad, Mac, and Apple Watch. It's built with a familiar design, so it's simple and easy to use and understand. Ruby works great with your devices, and supports iCloud syncing for a seamless experience across all of them.

@@ -61,6 +61,10 @@ export const App = defineDocumentType(() => ({
 			type: "string",
 			required: true,
 		},
+		priority: {
+			type: "number",
+			required: false,
+		}
 	},
 }));
 
