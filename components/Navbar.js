@@ -1,6 +1,5 @@
 import Link from "next/link";
 import ThemeSwitch from "./ThemeSwitch";
-import { navLinks } from "@/meta";
 import { useState, useEffect } from "react";
 import clsx from "clsx";
 import {
@@ -10,6 +9,13 @@ import {
 } from "@tabler/icons-react";
 import Menu from "./Menu";
 import PeroxaanIcon from "./PeroxaanIcon";
+
+const navLinks = {
+	Newsroom: "/newsroom",
+	Ruby: "/ruby",
+	Talon: "/talon",
+	Evergreen: "/evergreen",
+};
 
 const links = Object.entries(navLinks).map(([name, href]) => (
 	<Link
