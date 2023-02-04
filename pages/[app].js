@@ -19,7 +19,7 @@ export default function App({ app }) {
 							width="96"
 							height="96"
 							alt={`${app.name} app icon`}
-							className="mr-4 h-24 w-24 rounded-md"
+							className="h-24 w-24 rounded-md md:mr-4"
 						/>
 						<div>
 							<h1 className="mb-2 mt-2 text-4xl font-bold md:mt-0">
