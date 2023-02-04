@@ -12,7 +12,7 @@ const CustomImage = (props) => (
 const Float = (props) => (
 	// eslint-disable-next-line jsx-a11y/alt-text
 	<Image
-		className="float-right mb-4 ml-4 rounded-md"
+		className="float-right mb-4 ml-4 h-32 w-32 rounded-md md:h-64 md:w-64"
 		width="256"
 		height="256"
 		{...props}
