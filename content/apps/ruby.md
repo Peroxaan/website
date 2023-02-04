@@ -1,6 +1,6 @@
 ---
 name: Ruby
-description: Beautifully designed news app with powerful features.
+description: Beautifully designed news app with powerful features and deep customization.
 color: red
 appStore: "1522815729"
 priority: 1
