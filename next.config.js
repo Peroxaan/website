@@ -1,7 +1,4 @@
 const { withContentlayer } = require("next-contentlayer");
+const withExportImages = require("next-export-optimize-images");
 
-module.exports = withContentlayer({
-	images: {
-		unoptimized: true,
-	},
-});
+module.exports = withExportImages(withContentlayer({}));

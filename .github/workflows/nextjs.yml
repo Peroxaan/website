@@ -80,6 +80,8 @@ jobs:
               run: ${{ steps.detect-package-manager.outputs.runner }} next build
             - name: Static HTML export with Next.js
               run: ${{ steps.detect-package-manager.outputs.runner }} next export
+            - name: Static image optimization with next-export-optimize-images
+              run: ${{ steps.detect-package-manager.outputs.runner }} next-export-optimize-images
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
