@@ -7,8 +7,14 @@ import {
 } from "@tabler/icons-react";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { navLinks } from "../meta";
 import Link from "next/link";
+
+const navLinks = {
+	Newsroom: "/newsroom",
+	Ruby: "/ruby",
+	Talon: "/talon",
+	Evergreen: "/evergreen",
+};
 
 export default function Menu({ open, setOpen }) {
 	const [mounted, setMounted] = useState(false);
