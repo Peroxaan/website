@@ -13,13 +13,13 @@ export default function App({ app }) {
 			</Head>
 			<div>
 				<div className="flex flex-col items-center rounded-md bg-zinc-200 p-4 text-center text-xl dark:bg-zinc-800">
-					<div className="flex flex-col items-center md:flex-row md:text-left">
+					<div className="flex flex-col md:flex-row md:text-left">
 						<Image
 							src={`/apps/${app.name}.png`}
 							width="96"
 							height="96"
 							alt={`${app.name} app icon`}
-							className="h-24 w-24 rounded-md md:mr-4"
+							className="mx-auto h-24 w-24 rounded-md md:mr-4"
 						/>
 						<div>
 							<h1 className="mb-2 mt-2 text-4xl font-bold md:mt-0">
