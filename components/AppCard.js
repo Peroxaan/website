@@ -1,5 +1,6 @@
 import Link from "next/link";
 import clsx from "clsx";
+import Image from "next/image";
 
 export default function AppCard({ name, description, color = "zinc" }) {
 	const colorMap = {
@@ -12,13 +13,20 @@ export default function AppCard({ name, description, color = "zinc" }) {
 	return (
 		<Link
 			className={clsx(
-				"flex flex-col rounded-md drop-shadow transition ease-in-out",
+				"rounded-md p-6 drop-shadow transition ease-in-out",
 				colorMap[color]
 			)}
 			href={"/" + name.toLowerCase()}
 		>
-			<h1 className="mb-2 px-6 pt-6 text-4xl font-extrabold">{name}</h1>
-			<p className="flex-grow px-6 pb-6 text-xl">{description}</p>
+			<Image
+				width="44"
+				height="44"
+				alt={name + " app icon"}
+				src={`/apps/${name}.png`}
+				className="float-left mr-2 rounded-md align-top"
+			/>
+			<h1 className="mb-2 text-4xl font-extrabold">{name}</h1>
+			<p className="text-xl">{description}</p>
 		</Link>
 	);
 }
