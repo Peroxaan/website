@@ -81,29 +81,23 @@ export default function Menu({ open, setOpen }) {
 						<a
 							href="https://twitter.com/Peroxaan"
 							aria-label="Peroxaan on Twitter"
+							className="p-4"
 						>
-							<IconBrandTwitter
-								size={32}
-								className="h-full w-full p-4"
-							/>
+							<IconBrandTwitter size={32} />
 						</a>
 						<a
 							href="https://instagram.com/Peroxaan"
 							aria-label="Peroxaan on Instagram"
+							className="p-4"
 						>
-							<IconBrandInstagram
-								size={32}
-								className="h-full w-full p-4"
-							/>
+							<IconBrandInstagram size={32} />
 						</a>
 						<a
 							href="https://github.com/Peroxaan"
 							aria-label="Peroxaan on GitHub"
+							className="p-4"
 						>
-							<IconBrandGithub
-								size={32}
-								className="h-full w-full p-4"
-							/>
+							<IconBrandGithub size={32} />
 						</a>
 					</div>
 				</div>
