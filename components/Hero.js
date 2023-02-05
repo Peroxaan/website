@@ -10,7 +10,7 @@ export default function Hero() {
 		setMounted(true);
 	}, []);
 	return (
-		<div className="mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 ">
+		<div className="mx-auto mb-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
 			<h1 className="my-auto max-w-lg text-5xl font-bold leading-[4rem] md:text-6xl">
 				High-quality{" "}
 				<span className="inline-block w-[290px] bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent dark:from-pink-400 dark:to-pink-600 md:w-[360px]">
@@ -29,7 +29,7 @@ export default function Hero() {
 				for iOS and macOS.
 			</h1>
 
-			<div className="relative mx-auto h-96 w-full">
+			<div className="relative mx-auto h-72 w-full lg:h-96">
 				<Image
 					fill
 					alt="Apple devices showing Peroxaan apps running on them."
