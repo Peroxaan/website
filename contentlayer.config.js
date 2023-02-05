@@ -44,6 +44,7 @@ export const Post = defineDocumentType(() => ({
 export const App = defineDocumentType(() => ({
 	name: "App",
 	filePathPattern: `apps/*.md`,
+	contentType: "mdx",
 	fields: {
 		name: {
 			type: "string",
@@ -64,7 +65,7 @@ export const App = defineDocumentType(() => ({
 		priority: {
 			type: "number",
 			required: false,
-		}
+		},
 	},
 }));
 

@@ -1,8 +1,33 @@
 import Image from "next/image";
 import { allApps } from ".contentlayer/generated";
 import Head from "next/head";
+import { useMDXComponent } from "next-contentlayer/hooks";
+
+const ContributorGrid = ({ children }) => (
+	<div className="grid grid-cols-1 gap-4">{children}</div>
+);
+
+const Contributor = ({ name, role, href }) => (
+	<a href={href} className="not-prose no-underline">
+		<div className="flex h-full flex-row items-center rounded-md bg-zinc-200 p-4 transition-transform ease-in-out hover:scale-[1.01] dark:bg-zinc-800 md:flex-col lg:flex-row">
+			<Image
+				alt={name}
+				src={"/contributors/" + name + ".jpg"}
+				width={96}
+				height={96}
+				className="mr-4 rounded-full md:mr-0 md:mb-4 lg:mb-0 lg:mr-4"
+			/>
+			<div>
+				<h3 className="text-xl font-bold">{name}</h3>
+				<p>{role}</p>
+			</div>
+		</div>
+	</a>
+);
 
 export default function App({ app }) {
+	const MDXContent = useMDXComponent(app.body.code);
+
 	return (
 		<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 			<Head>
@@ -41,10 +66,9 @@ export default function App({ app }) {
 						/>
 					</a>
 				</div>
-				<div
-					className="prose prose-xl my-4 dark:prose-invert"
-					dangerouslySetInnerHTML={{ __html: app.body.html }}
-				/>
+				<div className="prose prose-xl my-4 dark:prose-invert">
+					<MDXContent components={{ ContributorGrid, Contributor }} />
+				</div>
 			</div>
 
 			<div className="relative h-[52rem]">
