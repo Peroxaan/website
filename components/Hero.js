@@ -1,4 +1,3 @@
-import Balancer from "react-wrap-balancer";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -35,6 +34,8 @@ export default function Hero() {
 					alt="Apple devices showing Peroxaan apps running on them."
 					src="/Hero.png"
 					className="object-contain"
+					sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 640px"
+					priority
 				/>
 			</div>
 		</div>
