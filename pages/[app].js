@@ -18,7 +18,7 @@ const Contributor = ({ name, role, href }) => (
 				className="mr-4 rounded-full md:mr-0 md:mb-4 lg:mb-0 lg:mr-4"
 			/>
 			<div>
-				<h3 className="text-xl font-bold">{name}</h3>
+				<h2 className="text-xl font-bold">{name}</h2>
 				<p>{role}</p>
 			</div>
 		</div>
