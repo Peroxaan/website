@@ -2,6 +2,9 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }) {
 	const title = pageProps?.seo?.title ?? "Peroxaan Studios";
@@ -33,6 +36,14 @@ export default function App({ Component, pageProps }) {
 				<meta property="og:site_name" content="Peroxaan Studios" />
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
+
+			<style jsx global>
+				{`
+					:root {
+						--font-inter: ${inter.style.fontFamily};
+					}
+				`}
+			</style>
 
 			<Navbar />
 			<main className="mx-auto my-10 max-w-7xl px-6 xl:px-0">
