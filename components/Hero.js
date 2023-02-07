@@ -1,18 +1,36 @@
 import { Typewriter } from "react-simple-typewriter";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
 export default function Hero() {
 	const [mounted, setMounted] = useState(false);
+	const [width, setWidth] = useState(0);
+	const ref = useRef(null);
 
 	useEffect(() => {
 		setMounted(true);
-	}, []);
+		setWidth(ref.current.offsetWidth);
+
+		window.addEventListener("resize", () => {
+			setWidth(ref.current.offsetWidth);
+		});
+	}, [setWidth]);
+
 	return (
 		<div className="mx-auto mb-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
 			<h1 className="my-auto max-w-lg text-5xl font-bold leading-[4rem] md:text-6xl">
 				High-quality{" "}
-				<span className="inline-block w-[290px] bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent dark:from-pink-400 dark:to-pink-600 md:w-[360px]">
+				<span className="invisible" ref={ref}>
+					experiences
+				</span>
+				<span
+					className="bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent dark:from-pink-400 dark:to-pink-600"
+					style={{
+						width,
+						marginLeft: width * -1,
+						display: mounted ? "inline-block" : "none",
+					}}
+				>
 					{mounted ? (
 						<Typewriter
 							words={["apps", "services", "experiences"]}
