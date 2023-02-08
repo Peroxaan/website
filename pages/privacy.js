@@ -59,3 +59,13 @@ export default function Privacy() {
 		</div>
 	);
 }
+
+export function getStaticProps() {
+	return {
+		props: {
+			seo: {
+				title: "Privacy Policy",
+			},
+		},
+	};
+}

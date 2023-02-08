@@ -47,6 +47,14 @@ export const getStaticProps = () => {
 	return {
 		props: {
 			posts,
+			seo: {
+				title: "Newsroom",
+				description:
+					"The latest announcements & updates from the Peroxaan team.",
+				image: "/newsroom.png",
+				imageAlt:
+					"Peroxaan Newsroom logo and name on a white background.",
+			},
 		},
 	};
 };
