@@ -46,11 +46,11 @@ export default function App({ Component, pageProps }) {
 			</style>
 
 			<Navbar />
-			<main className="mx-auto my-10 max-w-7xl px-6 xl:px-0">
+			<main className="mx-auto my-10 max-w-7xl px-6 2xl:px-0">
 				<Component {...pageProps} />
 			</main>
 
-			<footer className="mx-auto my-20 max-w-7xl px-6 text-zinc-600 dark:text-zinc-400 xl:px-0">
+			<footer className="my-20 mx-auto max-w-7xl px-6 text-zinc-600 dark:text-zinc-400 2xl:px-0">
 				<p>© 2023 Peroxaan Studios, LLC.</p>
 				<p className="mb-2">
 					Website built by{" "}
