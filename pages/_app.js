@@ -52,13 +52,23 @@ export default function App({ Component, pageProps }) {
 
 			<footer className="my-20 mx-auto max-w-7xl px-6 text-zinc-600 dark:text-zinc-400 2xl:px-0">
 				<p>© 2023 Peroxaan Studios, LLC.</p>
-				<p className="mb-2">
+				<p>
 					Website built by{" "}
 					<a
 						href="https://nchristopher.me"
 						className="underline transition-colors ease-in-out hover:text-blue-700 dark:hover:text-blue-300"
 					>
 						Nicholas Christopher
+					</a>
+					.
+				</p>
+				<p className="mb-2">
+					Peroxaan logo designed by{" "}
+					<a
+						href="https://twitter.com/DylanMcD8"
+						className="underline transition-colors ease-in-out hover:text-blue-700 dark:hover:text-blue-300"
+					>
+						Dylan McDonald
 					</a>
 					.
 				</p>
