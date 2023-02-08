@@ -8,4 +8,4 @@ Built with:
 
 ## 📜 License
 
-    © 2023 Peroxaan. All rights reserved.
+    © 2023 Peroxaan Studios, LLC. All rights reserved.
