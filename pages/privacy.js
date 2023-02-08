@@ -3,6 +3,9 @@ export default function Privacy() {
 		<div className="prose prose-xl dark:prose-invert md:prose-2xl">
 			<h1>Privacy Policy</h1>
 			<p>
+				<strong>Last updated on June 19th, 2022.</strong>
+			</p>
+			<p>
 				At Peroxaan Studios, we believe in user privacy, and we like to
 				keep you in the loop about how your data may be collected and or
 				utilized in our apps.
