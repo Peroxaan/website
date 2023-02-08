@@ -17,5 +17,4 @@ Ruby also offers an Apple Watch app, where you can quickly view headlines on you
 
 <ContributorGrid>
     <Contributor name="Michael Burkhardt" role="Lead developer" href="https://twitter.com/tme_michael" />
-    <Contributor name="Dylan McDonald" role="Icon design consultant" href="https://twitter.com/DylanMcD8" />
 </ContributorGrid>
