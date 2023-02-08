@@ -20,9 +20,17 @@ export default function Hero() {
 		<div className="mx-auto mb-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
 			<h1 className="my-auto max-w-lg text-5xl font-bold leading-[4rem] md:text-6xl">
 				High-quality{" "}
-				<span className="invisible" ref={ref}>
+				<span
+					className="invisible bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent dark:from-pink-400 dark:to-pink-600"
+					ref={ref}
+				>
 					experiences
 				</span>
+				<noscript>
+					<style>
+						{`.invisible { visibility: visible !important; }`}
+					</style>
+				</noscript>
 				<span
 					className="bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent dark:from-pink-400 dark:to-pink-600"
 					style={{
@@ -31,7 +39,7 @@ export default function Hero() {
 						display: mounted ? "inline-block" : "none",
 					}}
 				>
-					{mounted ? (
+					{mounted && (
 						<Typewriter
 							words={["apps", "services", "experiences"]}
 							typeSpeed={100}
@@ -39,8 +47,6 @@ export default function Hero() {
 							delaySpeed={1000}
 							cursor={true}
 						/>
-					) : (
-						<noscript>experiences</noscript>
 					)}
 				</span>{" "}
 				for iOS and macOS.
