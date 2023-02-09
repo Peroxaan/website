@@ -66,12 +66,17 @@ export default function App({ app }) {
 									app.appStore
 								}
 								className="mx-auto"
+								aria-label="Download on the App Store"
 							>
 								<AppStoreBadge />
 							</a>
 						)}
 						{app.windows && (
-							<a href={app.windows} className="mx-auto">
+							<a
+								href={app.windows}
+								className="mx-auto"
+								aria-label="Download for Windows"
+							>
 								<WindowsBadge />
 							</a>
 						)}
