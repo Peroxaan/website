@@ -14,9 +14,8 @@ We built Talon to take advantage of the features that Discord, Slack, and IFTTT 
 For even more features, you can purchase Talon Pro. Talon Pro is a one time purchase that allows you to shorten links with Talon, using our own in-house [talon.link](http://talon.link) service. Talon Pro will be growing more with future updates.
 
 <ContributorGrid>
-    <Contributor name="Michael Burkhardt" role="Lead developer" href="https://twitter.com/tme_michael" />
-    <Contributor name="Dylan McDonald" role="Designer & developer" href="https://twitter.com/DylanMcD8" />
-    <Contributor name="TheLBall" role="Windows developer" href="https://twitter.com/TheLBall" />
-    <Contributor name="Landon Boles" role="Backend developer (talon.link)" href="https://twitter.com/landon_xyz" />
-    <Contributor name="Elijah Ciali" role="Designer of alternative icons" href="https://twitter.com/ItsElijahCiali" />
+    <Contributor name="Michael Burkhardt" role="Lead Developer" href="https://twitter.com/tme_michael" />
+    <Contributor name="Dylan McDonald" role="Designer & Developer" href="https://twitter.com/DylanMcD8" />
+    <Contributor name="TheLBall" role="Windows Developer" href="https://twitter.com/TheLBall" />
+    <Contributor name="Landon Boles" role="Talon.link Developer" href="https://twitter.com/landon_xyz" />
 </ContributorGrid>
