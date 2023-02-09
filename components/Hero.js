@@ -9,11 +9,17 @@ export default function Hero() {
 
 	useEffect(() => {
 		setMounted(true);
-		setWidth(ref.current.offsetWidth);
+		if (ref.current?.offsetWidth) setWidth(ref.current.offsetWidth);
 
-		window.addEventListener("resize", () => {
-			setWidth(ref.current.offsetWidth);
-		});
+		function handleResize() {
+			if (ref.current?.offsetWidth) setWidth(ref.current.offsetWidth);
+		}
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
 	}, [setWidth]);
 
 	return (
