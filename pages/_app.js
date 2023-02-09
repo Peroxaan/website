@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
 		: "Peroxaan Studios";
 	const description =
 		pageProps?.seo?.description ??
-		"High-quality experiences for iOS and macOS.";
+		"High-quality experiences for iOS, macOS, and Windows.";
 	const image =
 		process.env.NEXT_PUBLIC_URL + (pageProps?.seo?.image ?? "/cover.png");
 	const imageAlt =

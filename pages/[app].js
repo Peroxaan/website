@@ -2,6 +2,8 @@ import Image from "next/image";
 import { allApps } from ".contentlayer/generated";
 import Head from "next/head";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import WindowsBadge from "../components/WindowsBadge";
+import AppStoreBadge from "../components/AppStoreBadge";
 
 const ContributorGrid = ({ children }) => (
 	<div className="grid grid-cols-1 gap-4">{children}</div>
@@ -56,17 +58,24 @@ export default function App({ app }) {
 						</div>
 					</div>
 
-					<a
-						href={"https://apps.apple.com/us/app/id" + app.appStore}
-						className="mt-4"
-					>
-						<Image
-							width="160"
-							height="60"
-							alt="Download on the App Store"
-							src="/app-store-badge.svg"
-						/>
-					</a>
+					<div className="mt-4 flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4">
+						{app.appStore && (
+							<a
+								href={
+									"https://apps.apple.com/us/app/id" +
+									app.appStore
+								}
+								className="mx-auto"
+							>
+								<AppStoreBadge />
+							</a>
+						)}
+						{app.windows && (
+							<a href={app.windows} className="mx-auto">
+								<WindowsBadge />
+							</a>
+						)}
+					</div>
 				</div>
 				<div className="prose prose-xl my-4 dark:prose-invert">
 					<MDXContent components={{ ContributorGrid, Contributor }} />

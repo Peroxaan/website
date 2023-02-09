@@ -3,6 +3,7 @@ name: Talon
 description: Easily use & manage Webhooks for Discord, IFTTT, Slack, and more.
 color: purple
 appStore: "1492913323"
+windows: https://dl.peroxaan.com/TalonSetup.exe
 priority: 2
 ---
 

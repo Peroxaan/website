@@ -60,7 +60,11 @@ export const App = defineDocumentType(() => ({
 		},
 		appStore: {
 			type: "string",
-			required: true,
+			required: false,
+		},
+		windows: {
+			type: "string",
+			required: false,
 		},
 		priority: {
 			type: "number",

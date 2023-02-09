@@ -55,7 +55,7 @@ export default function Hero() {
 						/>
 					)}
 				</span>{" "}
-				for iOS and macOS.
+				for iOS, macOS, and Windows.
 			</h1>
 
 			<div className="relative mx-auto h-72 w-full lg:h-96">
