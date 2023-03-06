@@ -62,7 +62,7 @@ export default function Navbar() {
 				className="rounded-lg px-2 py-2 text-2xl font-extrabold transition-colors ease-in-out hover:bg-zinc-200 dark:hover:bg-zinc-800 xl:px-6"
 			>
 				<div className="bg-gradient-to-r from-pink-500 to-pink-600 bg-clip-text text-transparent dark:from-pink-400 dark:to-pink-600">
-					<PeroxaanIcon className="mr-2 inline-block text-pink-600 dark:text-pink-400" />
+					<PeroxaanIcon className="mr-2 inline-block align-text-bottom text-pink-600 dark:text-pink-400" />
 					Peroxaan
 				</div>
 			</Link>

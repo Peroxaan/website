@@ -1,4 +1,4 @@
-export default function PeroxaanIcon({ className, width = 26, height = 26 }) {
+export default function PeroxaanIcon({ className, width = 32, height = 32 }) {
 	const s = {
 		fill: "none",
 		stroke: "currentColor",
