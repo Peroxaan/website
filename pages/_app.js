@@ -55,10 +55,10 @@ export default function App({ Component, pageProps }) {
 				<p>
 					Website built by{" "}
 					<a
-						href="https://nchristopher.me"
+						href="https://nickoates.com"
 						className="underline transition-colors ease-in-out hover:text-blue-700 dark:hover:text-blue-300"
 					>
-						Nicholas Christopher
+						Nick Oates
 					</a>
 					.
 				</p>

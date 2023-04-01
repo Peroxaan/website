@@ -17,5 +17,5 @@ For even more features, you can purchase Talon Pro. Talon Pro is a one time purc
     <Contributor name="Michael Burkhardt" role="Lead Developer" href="https://twitter.com/tme_michael" />
     <Contributor name="Dylan McDonald" role="Designer & Developer" href="https://twitter.com/DylanMcD8" />
     <Contributor name="TheLBall" role="Windows Developer" href="https://twitter.com/TheLBall" />
-    <Contributor name="Nicholas Christopher" role="Talon.link Developer" href="https://nchristopher.me" />
+    <Contributor name="Nick Oates" role="Talon.link Developer" href="https://nickoates.com" />
 </ContributorGrid>
