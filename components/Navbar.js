@@ -68,23 +68,23 @@ export default function Navbar() {
 			</Link>
 			<div className="hidden text-xl font-semibold lg:block">{links}</div>
 			<div className="flex flex-row items-center">
-				<a href="https://twitter.com/peroxaan">
-					<IconBrandTwitter
-						className="hidden h-full w-10 rounded-lg p-2 transition-colors ease-in-out hover:bg-zinc-200 dark:hover:bg-zinc-800 lg:block"
-						aria-label="Peroxaan on Twitter"
-					/>
+				<a
+					href="https://twitter.com/peroxaan"
+					aria-label="Visit Peroxaan on Twitter"
+				>
+					<IconBrandTwitter className="hidden h-full w-10 rounded-lg p-2 transition-colors ease-in-out hover:bg-zinc-200 dark:hover:bg-zinc-800 lg:block" />
 				</a>
-				<a href="https://instagram.com/peroxaan">
-					<IconBrandInstagram
-						className="hidden h-full w-10 rounded-lg p-2 transition-colors ease-in-out hover:bg-zinc-200 dark:hover:bg-zinc-800 lg:block"
-						aria-label="Peroxaan on Instagram"
-					/>
+				<a
+					href="https://instagram.com/peroxaan"
+					aria-label="Visit Peroxaan on Instagram"
+				>
+					<IconBrandInstagram className="hidden h-full w-10 rounded-lg p-2 transition-colors ease-in-out hover:bg-zinc-200 dark:hover:bg-zinc-800 lg:block" />
 				</a>
-				<a href="https://github.com/peroxaan">
-					<IconBrandGithub
-						className="hidden h-full w-10 rounded-lg p-2 transition-colors ease-in-out hover:bg-zinc-200 dark:hover:bg-zinc-800 lg:block"
-						aria-label="Peroxaan on GitHub"
-					/>
+				<a
+					href="https://github.com/peroxaan"
+					aria-label="Visit Peroxaan on GitHub"
+				>
+					<IconBrandGithub className="hidden h-full w-10 rounded-lg p-2 transition-colors ease-in-out hover:bg-zinc-200 dark:hover:bg-zinc-800 lg:block" />
 				</a>
 
 				<ThemeSwitch />
