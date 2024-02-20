@@ -5,7 +5,7 @@
 name: Deploy Next.js site to Pages
 
 env:
-    NEXT_PUBLIC_URL: "https://peroxaan.com"
+    NEXT_PUBLIC_URL: "https://archive.peroxaan.com"
 
 on:
     # Runs on pushes targeting the default branch
